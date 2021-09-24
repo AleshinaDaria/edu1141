@@ -12,7 +12,7 @@
 
 let btnK = document.getElementsByName("btnK")[1];
 if (btnK != undefined){ // Если находимся на главной странице Яндекс
-    document.getElementsByName("q")[0].value = "Как звучит флейта";
+    document.getElementsByName("q")[0].value = "Как звучит гобой";
     btnK.click();
 }else if(location.hostname == 'yandex.ru'){ // Если не на главной
     let links = document.links;
