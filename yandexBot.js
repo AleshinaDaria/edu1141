@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Бот для яндекс
+// @name         YandexBot
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
@@ -12,7 +12,7 @@
 
 let btnK = document.getElementsByName("btnK")[1];
 if (btnK != undefined){ // Если находимся на главной странице Яндекс
-    document.getElementsByName("q")[0].value = "Как звучит балабан";
+    document.getElementsByName("q")[0].value = "Как звучит флейта";
     btnK.click();
 }else if(location.hostname == 'yandex.ru'){ // Если не на главной
     let links = document.links;
